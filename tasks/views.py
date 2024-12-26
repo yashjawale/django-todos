@@ -1,13 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Task
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 def index(request):
     return render(request, 'home.html')
 
 def login(request):
-    return render(request, 'login.html')
+    form = AuthenticationForm()
+    return render(request, 'login.html', {'form': form})
 
 def register(request):
     form  = UserCreationForm()
