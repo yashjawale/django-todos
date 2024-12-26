@@ -2,6 +2,15 @@
 
 {% block content %}
 
+<dialog id="add-task-modal">
+    <h1 class="text-3xl tracking-tighter">Add new task</h1>
+    <form class="app-form">
+        {% csrf_token %}
+        {{ form }}
+        <button class="btn mt-2">Add Task</button>
+    </form>
+</dialog>
+
 <h2 class="text-2xl font-light pb-4 pt-4">pending:</h2>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
     {% for task in pending_tasks %}
@@ -28,5 +37,13 @@
     </div>
     {% endfor %}
 </div>
+
+
+<script>
+    document.getElementById('add-task-trigger').addEventListener('click', () => {
+        document.getElementById('add-task-modal').showModal()
+    })
+</script>
+
 
 {% endblock %}

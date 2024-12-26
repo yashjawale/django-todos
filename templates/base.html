@@ -16,7 +16,7 @@
 <nav class="container px-4 mx-auto flex justify-between items-end">
     <h1 class="font-extrabold text-7xl md:text-[132px] leading-none pt-8 -mb-2 md:-mb-5 tracking-tighter">todos.</h1>
     <div>
-        <button class="btn mr-2">Add Task</button>
+        <button class="btn mr-2" id="add-task-trigger">Add Task</button>
         <button class="btn btn-danger">Logout</button>
     </div>
 </nav>
@@ -76,6 +76,15 @@
     }
     .errorlist {
         @apply text-red-900;
+    }
+    dialog {
+        @apply bg-retrobeige px-4 py-6 border-2 border-black;
+    }
+    ::backdrop {
+        @apply bg-black opacity-50;
+    }
+    textarea {
+        @apply bg-retrobeige p-2 w-full border border-black backdrop-opacity-50;
     }
 </style>
 </body>
