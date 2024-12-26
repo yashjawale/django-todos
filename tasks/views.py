@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Task
+from django.contrib.auth.forms import UserCreationForm
 
 def index(request):
     return render(request, 'home.html')
@@ -9,7 +10,8 @@ def login(request):
     return render(request, 'login.html')
 
 def register(request):
-    return render(request, 'register.html')
+    form  = UserCreationForm()
+    return render(request, 'register.html', {'form': form})
 
 def taskdetails(request, task_id):
     task = Task.objects.filter(task_id=task_id)
