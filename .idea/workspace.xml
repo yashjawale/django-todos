@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add tasks app">
-      <change afterPath="$PROJECT_DIR$/djangotodos/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/taskdetails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/templates/tasks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangotodos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangotodos/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangotodos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangotodos/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/views.py" afterDir="false" />
+    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add blank templates &amp; setup static folder">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +47,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tasks" />
       <recent name="$PROJECT_DIR$/djangotodos/templates" />
     </key>
@@ -77,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735172193350</updated>
-      <workItem from="1735172194440" duration="5177000" />
+      <workItem from="1735172194440" duration="5583000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -95,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735198607746</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add blank templates &amp; setup static folder">
+      <option name="closed" value="true" />
+      <created>1735201303722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735201303722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add tasks app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tasks app" />
+    <MESSAGE value="Add blank templates &amp; setup static folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add blank templates &amp; setup static folder" />
   </component>
 </project>
