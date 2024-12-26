@@ -7,7 +7,7 @@
     {% for task in pending_tasks %}
     <div class="border-2 border-black p-4">
         <div class="flex justify-between item-start">
-            <p class="text-2xl tracking-tight">{{ task.title }}</p>
+            <a href="{% url 'tasks:taskdetails' task_id=task.id %}" class="text-2xl tracking-tight cursor-pointer hover:underline">{{ task.title }}</a>
             <a class="btn">Done</a>
         </div>
         {% if task.deadline %}
@@ -21,7 +21,7 @@
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 opacity-50">
     {% for task in completed_tasks %}
     <div class="border-2 border-black p-4">
-        <p class="text-2xl tracking-tight line-through">{{ task.title }}</p>
+        <a href="{% url 'tasks:taskdetails' task_id=task.id %}" class="text-2xl tracking-tight line-through cursor-pointer hover:underline">{{ task.title }}</a>
         {% if task.deadline %}
         <p class="font-light">{{ task.deadline|date:"d M Y" }} {{ task.deadline|time:"h:i A" }}</p>
         {% endif %}

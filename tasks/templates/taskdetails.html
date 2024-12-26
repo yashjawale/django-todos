@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>This content is from tasks page</h2>
-<p>Task ID: {{ task.task_id }}</p>
+<h2 class="text-5xl tracking-tight mt-8 mb-6">{{ task.title }}</h2>
+<p class="text-xl font-light">{{ task.description }}</p>
+<div class="flex flex-wrap gap-3 mt-8 mb-4">
+    <a href="{% url 'tasks:tasks' %}" class="btn">Go Back</a>
+    {% if task.completed %}
+    <a class="btn">Mark as Complete</a>
+    {% else %}
+    <span class="btn btn-success hover:opacity-100" style="cursor: default;">Completed</span>
+    {% endif %}
+</div>
 {% endblock %}

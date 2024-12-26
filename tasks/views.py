@@ -15,7 +15,7 @@ def register(request):
     return render(request, 'register.html', {'form': form})
 
 def taskdetails(request, task_id):
-    task = Task.objects.filter(task_id=task_id)
+    task = Task.objects.get(id=task_id)
     return render(request, 'taskdetails.html', {'task': task})
 
 def tasks(request):
