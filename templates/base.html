@@ -5,11 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todos.</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/tailwindcss" href="{% static 'styles.css' %}"/>
 </head>
-<body>
-<h1>This is default header</h1>
-{% block content %}
-{% endblock %}
+<body class="bg-retrobeige text-black">
+<nav class="container px-4 mx-auto flex justify-between items-end">
+    <h1 class="font-extrabold text-7xl md:text-[132px] leading-none pt-8 -mb-2 md:-mb-5 tracking-tighter">todos.</h1>
+    <button class="btn">Logout</button>
+</nav>
+<div class="[&>div]:h-5">
+    <div class="bg-retrored"></div>
+    <div class="bg-retroyellow"></div>
+    <div class="bg-retrogreen"></div>
+    <div class="bg-retroblue"></div>
+</div>
+<div class="container px-4 mx-auto pt-8">
+    {% block content %}
+    {% endblock %}
+</div>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    retrored: '#FB4834',
+                    retroyellow: '#FAB330',
+                    retroblue: '#83A598',
+                    retrogreen: '#8DC07C',
+                    retrobeige: '#F6EEDB'
+                },
+                fontFamily: {
+                    sans: 'Roboto Condensed'
+                }
+            }
+        }
+    }
+</script>
+<style type="text/tailwindcss">
+    .btn {
+        @apply uppercase text-retrobeige bg-black px-2 py-1 hover:opacity-50 text-sm;
+        box-shadow: 0 0 0 1px #F6EEDB, 0 0 0 2px black;
+        margin-bottom: 6px;
+    }
+</style>
 </body>
 </html>
