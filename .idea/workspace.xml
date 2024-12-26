@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add blank templates &amp; setup static folder">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add task model">
       <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735172193350</updated>
-      <workItem from="1735172194440" duration="5583000" />
+      <workItem from="1735172194440" duration="5893000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -94,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735201303722</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add task model">
+      <option name="closed" value="true" />
+      <created>1735201669890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735201669890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add tasks app" />
     <MESSAGE value="Add blank templates &amp; setup static folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add blank templates &amp; setup static folder" />
+    <MESSAGE value="Add task model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add task model" />
   </component>
 </project>
