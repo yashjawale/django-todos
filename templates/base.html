@@ -15,7 +15,10 @@
 <body class="bg-retrobeige text-black">
 <nav class="container px-4 mx-auto flex justify-between items-end">
     <h1 class="font-extrabold text-7xl md:text-[132px] leading-none pt-8 -mb-2 md:-mb-5 tracking-tighter">todos.</h1>
-    <button class="btn">Logout</button>
+    <div>
+        <button class="btn mr-2">Add Task</button>
+        <button class="btn btn-danger">Logout</button>
+    </div>
 </nav>
 <div class="[&>div]:h-5">
     <div class="bg-retrored"></div>
@@ -53,6 +56,9 @@
     }
     .btn.btn-small {
         @apply text-xs px-3 py-1;
+    }
+    .btn.btn-danger {
+        @apply bg-red-900;
     }
 </style>
 </body>
