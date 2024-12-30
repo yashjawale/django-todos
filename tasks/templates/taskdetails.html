@@ -3,12 +3,20 @@
 {% block content %}
 <h2 class="text-5xl tracking-tight mt-8 mb-6">{{ task.title }}</h2>
 <p class="text-xl font-light">{{ task.description }}</p>
+{% if task.deadline %}
+<p class="mt-4">Deadline:</p>
+<p class="font-light">{{ task.deadline|date:"d M Y" }} {{ task.deadline|time:"h:i A" }}</p>
+{% endif %}
 <div class="flex flex-wrap gap-3 mt-8 mb-4">
     <a href="{% url 'tasks:tasks' %}" class="btn">Go Back</a>
     {% if task.completed %}
-    <a class="btn">Mark as Complete</a>
-    {% else %}
     <span class="btn btn-success hover:opacity-100" style="cursor: default;">Completed</span>
+    {% else %}
+    <form class="single-button-form" action="/completetask/" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="task_id" value="{{ task.id }}"/>
+        <button class="btn">Mark as Complete</button>
+    </form>
     {% endif %}
 </div>
 {% endblock %}

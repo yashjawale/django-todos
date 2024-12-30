@@ -61,6 +61,16 @@ def tasks(request):
                   {'pending_tasks': pending_tasks, 'completed_tasks': completed_tasks, 'form': form})
 
 
+@login_required(login_url="/login/")
+def completetask(request):
+    if request.method == "POST":
+        updatetask = Task.objects.get(id=request.POST.get('task_id'))
+        if (updatetask.author == request.user):
+            updatetask.completed = True
+            updatetask.save()
+            return redirect("tasks:tasks")
+
+
 def logoutview(request):
     if request.method == "POST":
         logout(request)
