@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add redirection to index view">
+    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add task complete functionality">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/taskdetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/taskdetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +84,7 @@
       <updated>1735172193350</updated>
       <workItem from="1735172194440" duration="20594000" />
       <workItem from="1735493014646" duration="32000" />
-      <workItem from="1735541390077" duration="10071000" />
+      <workItem from="1735541390077" duration="12210000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -226,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735557600438</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add task complete functionality">
+      <option name="closed" value="true" />
+      <created>1735561773375</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735561773375</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +254,7 @@
     <MESSAGE value="Add login functionality" />
     <MESSAGE value="Link tasks with users" />
     <MESSAGE value="Add redirection to index view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add redirection to index view" />
+    <MESSAGE value="Add task complete functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add task complete functionality" />
   </component>
 </project>
