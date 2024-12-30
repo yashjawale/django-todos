@@ -4,7 +4,7 @@
 
 <dialog id="add-task-modal">
     <h1 class="text-3xl tracking-tighter">Add new task</h1>
-    <form class="app-form" action="/tasks/" method="post">
+    <form class="app-form" action="{% url 'tasks:tasks' %}" method="post">
         {% csrf_token %}
         {{ form }}
         <button class="btn mt-2">Add Task</button>
@@ -18,7 +18,7 @@
     <div class="border-2 border-black p-4">
         <div class="flex justify-between item-start">
             <a href="{% url 'tasks:taskdetails' task_id=task.id %}" class="text-2xl tracking-tight cursor-pointer hover:underline">{{ task.title }}</a>
-            <form class="single-button-form" action="/completetask/" method="post">
+            <form class="single-button-form" action="{% url 'tasks:completetask' %}" method="post">
                 {% csrf_token %}
                 <input type="hidden" name="task_id" value="{{ task.id }}"/>
                 <button class="btn">Done</button>

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="flex flex-col gap-4 justify-between px-3 md:px-12 py-8 md:w-2/3 border-2 border-black mb-8">
     <h2 class="my-auto text-4xl text-light tracking-tighter">register</h2>
-    <form class="app-form w-full" action="/register/" method="post">
+    <form class="app-form w-full" action="{% url 'tasks:register' %}" method="post">
         {% csrf_token %}
         {{ form }}
         <button class="btn mt-4 mr-2">Create new account</button>
