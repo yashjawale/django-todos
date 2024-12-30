@@ -8,7 +8,10 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    return render(request, 'home.html')
+    if request.user.is_authenticated:
+        return redirect('tasks:tasks')
+    else:
+        return redirect('tasks:login')
 
 
 def loginview(request):

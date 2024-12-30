@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add login functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/tasks.html" afterDir="false" />
+    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Link tasks with users">
+      <change beforePath="$PROJECT_DIR$/tasks/templates/home.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +84,7 @@
       <updated>1735172193350</updated>
       <workItem from="1735172194440" duration="20594000" />
       <workItem from="1735493014646" duration="32000" />
-      <workItem from="1735541390077" duration="8667000" />
+      <workItem from="1735541390077" duration="9355000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -209,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735550742234</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Link tasks with users">
+      <option name="closed" value="true" />
+      <created>1735556983752</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735556983752</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +236,7 @@
     <MESSAGE value="Add task details page" />
     <MESSAGE value="Add new task modal" />
     <MESSAGE value="Add login functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add login functionality" />
+    <MESSAGE value="Link tasks with users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link tasks with users" />
   </component>
 </project>
