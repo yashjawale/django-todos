@@ -43,9 +43,17 @@ def taskdetails(request, task_id):
 
 @login_required(login_url="/login/")
 def tasks(request):
-    pending_tasks = Task.objects.filter(completed=False).order_by('-deadline')
-    completed_tasks = Task.objects.filter(completed=False).order_by('-id')
-    form = forms.CreateTask()
+    if request.method == "POST":
+        form = forms.CreateTask(request.POST)
+        if form.is_valid():
+            newtask = form.save(commit=False)
+            newtask.author = request.user
+            newtask.save()
+            return redirect("tasks:tasks")
+    else:
+        form = forms.CreateTask()
+    pending_tasks = Task.objects.filter(author=request.user, completed=False).order_by('-deadline')
+    completed_tasks = Task.objects.filter(author=request.user, completed=True).order_by('-id')
     return render(request, 'tasks.html',
                   {'pending_tasks': pending_tasks, 'completed_tasks': completed_tasks, 'form': form})
 

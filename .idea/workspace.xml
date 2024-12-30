@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add new task modal">
+    <list default="true" id="75ee33cb-f5cc-41a6-9b13-0e01ac2f8c18" name="Changes" comment="Add login functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangotodos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangotodos/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/templates/tasks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <updated>1735172193350</updated>
       <workItem from="1735172194440" duration="20594000" />
       <workItem from="1735493014646" duration="32000" />
-      <workItem from="1735541390077" duration="6073000" />
+      <workItem from="1735541390077" duration="8667000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -204,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735234907874</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add login functionality">
+      <option name="closed" value="true" />
+      <created>1735550742234</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735550742234</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +230,7 @@
     <MESSAGE value="Add login UI" />
     <MESSAGE value="Add task details page" />
     <MESSAGE value="Add new task modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new task modal" />
+    <MESSAGE value="Add login functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login functionality" />
   </component>
 </project>

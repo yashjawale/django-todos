@@ -4,12 +4,13 @@
 
 <dialog id="add-task-modal">
     <h1 class="text-3xl tracking-tighter">Add new task</h1>
-    <form class="app-form">
+    <form class="app-form" action="/tasks/" method="post">
         {% csrf_token %}
         {{ form }}
         <button class="btn mt-2">Add Task</button>
     </form>
 </dialog>
+
 
 <h2 class="text-2xl font-light pb-4 pt-4">pending:</h2>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -23,8 +24,11 @@
         <p class="font-light">{{ task.deadline|date:"d M Y" }} {{ task.deadline|time:"h:i A" }}</p>
         {% endif %}
     </div>
+    {% empty %}
+    <p>No pending tasks.</p>
     {% endfor %}
 </div>
+
 
 <h2 class="text-2xl font-light pb-4 pt-8">completed:</h2>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 opacity-50">
@@ -35,9 +39,10 @@
         <p class="font-light">{{ task.deadline|date:"d M Y" }} {{ task.deadline|time:"h:i A" }}</p>
         {% endif %}
     </div>
+    {% empty %}
+    <p>No completed tasks.</p>
     {% endfor %}
 </div>
-
 
 <script>
     document.getElementById('add-task-trigger').addEventListener('click', () => {
