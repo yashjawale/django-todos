@@ -1,6 +1,7 @@
 # Django Todos
 
-A simple Django Todo application made for learning django framework. Interface design inspired by retro computers.
+A simple Django Todo application made for learning django framework. \
+Interface design inspired by retro computers.
 
 ## Features
 - User login & registration
@@ -15,6 +16,14 @@ A simple Django Todo application made for learning django framework. Interface d
 3. Install dependencies `pip install -r requirements.txt`
 4. Start app with `python manage.py startserver`
 5. Access the app at `http://127.0.0.1:8000/`
+
+## Screenshots
+![Tasks Screen](docs/tasks-screen.png)
+Tasks Screen
+
+![Login Screen](docs/login-screen.png)
+Login Screen
+
 
 ---
 Yash Jawale
