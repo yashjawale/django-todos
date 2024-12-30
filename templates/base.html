@@ -15,10 +15,15 @@
 <body class="bg-retrobeige text-black">
 <nav class="container px-4 mx-auto flex justify-between items-end">
     <h1 class="font-extrabold text-7xl md:text-[132px] leading-none pt-8 -mb-2 md:-mb-5 tracking-tighter">todos.</h1>
+    {% if user.is_authenticated %}
     <div>
         <button class="btn mr-2" id="add-task-trigger">Add Task</button>
-        <button class="btn btn-danger">Logout</button>
+        <form class="single-button-form" action="{% url 'tasks:logout' %}" method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger">Logout</button>
+        </form>
     </div>
+    {% endif %}
 </nav>
 <div class="[&>div]:h-5">
     <div class="bg-retrored"></div>
@@ -54,15 +59,19 @@
         box-shadow: 0 0 0 1px #F6EEDB, 0 0 0 2px black;
         margin-bottom: 6px;
     }
+
     .btn.btn-small {
         @apply text-xs px-3 py-1;
     }
+
     .btn.btn-danger {
         @apply bg-red-900;
     }
+
     .btn.btn-secondary {
         @apply bg-neutral-600;
     }
+
     .btn.btn-success {
         @apply bg-green-900;
     }
@@ -71,20 +80,29 @@
     .app-form input {
         @apply w-full p-2 bg-retrobeige border-black border mt-1 mb-2;
     }
+
     .helptext {
         @apply text-xs;
     }
+
     .errorlist {
         @apply text-red-900;
     }
+
     dialog {
         @apply bg-retrobeige px-4 py-6 border-2 border-black;
     }
+
     ::backdrop {
         @apply bg-black opacity-50;
     }
+
     textarea {
         @apply bg-retrobeige p-2 w-full border border-black backdrop-opacity-50;
+    }
+
+    .single-button-form {
+        @apply w-fit inline;
     }
 </style>
 </body>
